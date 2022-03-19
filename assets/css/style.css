@@ -312,8 +312,8 @@ section {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 8px;
+  padding-bottom: 14px;
   position: relative;
   color: #45505b;
 }
@@ -338,7 +338,7 @@ section {
   left: calc(50% - 20px);
 }
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 17px;
 }
 
 /*--------------------------------------------------------------
