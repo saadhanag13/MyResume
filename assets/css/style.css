@@ -501,6 +501,9 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 .portfolio #portfolio-flters {
   padding: 0;
@@ -547,6 +550,7 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+  align-items: center;
 }
 .portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
