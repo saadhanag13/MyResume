@@ -691,7 +691,21 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-
+/*-----------------------------------------------------------
+Resume button
+-------------------------------------------------------------*/
+.new-resume-title{
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: rgb(187, 175, 175);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
