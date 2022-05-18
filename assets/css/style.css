@@ -700,9 +700,7 @@ Resume button
   border: none;
   outline: none;
   color: #fff;
-  background: rgb(187, 175, 175);
   cursor: pointer;
-  position: relative;
   z-index: 0;
   border-radius: 10px;
 }
