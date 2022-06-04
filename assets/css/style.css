@@ -411,7 +411,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -694,41 +694,47 @@ section {
 /*-----------------------------------------------------------
 Resume button
 -------------------------------------------------------------*/
+.new-resume-title{
+  text-align: center;
+}
 .resume-btn{
-  display: flex;
-  align-items: center;
-  color: #fff;
+  width: 40%;
+  height: 50%;
+  color: #011426;
   background: none;
-  padding: 12px 18px;
+  overflow: hidden;
+  display: inline-block;
   position: relative;
+  transition: color .5s .25s;
 }
-
-.resume-btn::before{
-  content: "";
+.resume-btn::before, 
+.resume-btn::after{
+  content: " ";
+  top: 0;
+  width: 50%;
+  height: 100%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%) translateX(calc(100% + 4px));
-  width: 45px;
-  height: 45px;
-  background: #0563bb;
-  border-radius: 50px;
-  transition: transform .25s .25s cubic-bezier(0, 0, .5, 2) width .25s cubic-bezier(0, 0, .5, 2);
+  background-color: #519ade;
   z-index: -1;
+  transform: scaleX(0);
+  transition: transform .5s cubic-bezier(.785, .135, .15, .86);
 }
-
-.resume-btn:hover::before{
-  width: 100%;
-  transform: translateY(-50%) translateX(-18px);
-  transition: transform .25s cubic-bezier(0, 0, .5, 2) width .25s .25s cubic-bezier(0, 0, .5, 2);
+.resume-btn::before{
+  left: 0;
+  transform-origin: left;
 }
-
-.resume-btn i{
-  margin-left: 5px;
-  transition: transform .25s, .4s cubic-bezier(0, 0, .5, 2);
+.resume-btn::after{
+  right: 0;
+  transform-origin: right;
 }
-
-.resume-btn::hover{
-  transform: translateX(3px);
+.resume:hover::before,
+.resume:hover:right{
+  transform: scaleX(1);
+}
+.resume-btn:hover{
+  background-color: #3c8dd9;
+  color: #eff0f0;
+  transition-delay: .2s;
 }
 /*--------------------------------------------------------------
 # Services
