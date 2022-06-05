@@ -734,7 +734,7 @@ Resume button
 .resume-btn:hover{
   background-color: #3c8dd9;
   color: #eff0f0;
-  transition-delay: .2s;
+  transition-delay: .1s;
 }
 /*--------------------------------------------------------------
 # Services
