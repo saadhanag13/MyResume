@@ -1,15 +1,11 @@
-<?php 
-
+<?php
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
-$formcontent="From: $name \n Subject: $subject \n Message: $message";
-$recipient = "saadhana.ganesh13@gmail.com";
-$subject = "contact";
+$formcontent=" From: $name \n Message: $message";
+$recipient = "saadhana.ganesh@gmail.com";
 $mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+mail($recipient, $formcontent, $mailheader) or die("Error!");
 echo "Thank You!";
-
-
 ?>
