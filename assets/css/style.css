@@ -697,6 +697,7 @@ Resume button
 .new-resume-title{
   text-align: center;
 }
+/*
 .resume-btn{
   width: 40%;
   height: 50%;
@@ -735,6 +736,21 @@ Resume button
   background-color: #3c8dd9;
   color: #eff0f0;
   transition-delay: .1s;
+}
+
+*/
+
+.resume-btn{
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.resume-btn:hover{
+  background: #0678e3;
 }
 /*--------------------------------------------------------------
 # Services
