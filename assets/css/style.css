@@ -708,6 +708,11 @@ Resume button
   position: relative;
   transition: color .5s .25s;
 }
+
+.resume-btn h3 {
+  margin: 0.5rem !important;
+}
+
 .resume-btn::before, 
 .resume-btn::after{
   content: " ";
@@ -916,39 +921,72 @@ Resume button
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+/* .contact
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .contact .div_main
+{
+  width: 5rem !important;
+} */
+
 .contact .info {
   width: 100%;
   background: #fff;
-}
-.contact .info i {
-  font-size: 20px;
-  color: #0563bb;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #eef7ff;
+  flex-direction: row;
   display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 1.1rem;
+}
+
+.col-lg-4
+{
+  width: 100%;
+}
+
+.div_main
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact .info i {
+  font-size: 30px;
+  padding: 4%;
+  color: #0563bb;
+  /* float: left; */
+  margin-bottom: 10px;
+  background: #eef7ff;
+  display:flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
 .contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
+  /* padding: 0 0 0 60px; */
   font-weight: 600;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   color: #45505b;
 }
 .contact .info p {
-  padding: 0 0 0 60px;
+  /* padding: 0 0 0 60px; */
   margin-bottom: 0;
-  font-size: 14px;
   color: #728394;
 }
-.contact .info .email, .contact .info .phone {
+/* .contact .info .email, .contact .info .phone {
   margin-top: 40px;
-}
+} */
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
   background: #0563bb;
   color: #fff;
