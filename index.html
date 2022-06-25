@@ -343,7 +343,15 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
+            <?php
+             if($message_sent): 
+            ?>
 
+              <h3>Thanks we'll be in touch!</h3>
+
+            <?php
+              else:
+            ?>
             <form action="forms/contact.php" method="POST" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -368,6 +376,9 @@
             </form>
 
           </div>
+          <?php
+            endif;
+          ?>
 
         </div>
 
