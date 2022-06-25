@@ -1088,3 +1088,12 @@ Resume button
 #footer .credits {
   font-size: 13px;
 }
+
+#footer .icon-profile{
+  align-items: initial;
+  position: relative;
+  height: 95px;
+  width: 95px;
+  display: inline-block;
+  
+}
