@@ -1135,3 +1135,9 @@ Resume button
   display: inline-block;
   
 }
+
+@media max-width: 700px; {
+  .contact .info{
+    flex-direction: column;
+  }
+}
