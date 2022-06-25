@@ -946,9 +946,9 @@ Resume button
   font-size: 1.1rem;
 }
 
-.col-lg-4
+.main_div
 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .div_main
