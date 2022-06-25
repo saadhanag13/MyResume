@@ -1136,7 +1136,7 @@ Resume button
   
 }
 
-@media max-width: 700px; {
+@media (max-width: 700px) {
   .contact .info{
     flex-direction: column;
   }
