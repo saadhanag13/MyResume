@@ -17,15 +17,40 @@
   });
 
 
-	var fullHeight = function() {
+	// var fullHeight = function() {
+	// 	$('.js-fullheight').css('min-height', $(window).height());
+	// 	$(window).resize(function(){
+	// 		$('.js-fullheight').css('min-height', $(window).height());
+	// 	});
+	// };
 
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
+	// fullHeight();
+
+	var fullHeight = function () {
+		$('.js-fullheight').css({
+			'height': 'auto',
+			'min-height': $(window).height() + 'px'
 		});
-
+		
+		$(window).resize(function () {
+			$('.js-fullheight').css({
+				'height': 'auto',
+				'min-height': $(window).height() + 'px'
+			});
+		});
 	};
 	fullHeight();
+
+
+	// .one-third.js-fullheight,
+	// .slider-item,
+	// .js-fullheight {
+	// 	min-height: 100vh; /* not just height */
+	// 	height: auto;
+	// 	overflow: visible;
+	// }
+
+
 
 	// loader
 	var loader = function() {
@@ -81,6 +106,18 @@
 	};
 
 	onePageClick();
+
+	var navCloseOnClick = function () {
+		
+		$('.navbar-nav li a[href^="#"]').on('click', function () {
+			$('.navbar-toggler').removeClass('active'); // Reset burger button
+			$('#ftco-nav').removeClass('show'); // Bootstrap class to hide nav
+    		$('.navbar-collapse').collapse('hide'); // Collapses navbar if using Bootstrap
+		});
+	};
+
+	navCloseOnClick();
+
 	
 
 	var carousel = function() {

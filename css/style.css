@@ -3516,6 +3516,38 @@ input[type="button"].btn-block {
   background: no-repeat center center;
   background-size: 100% 100%; }
 
+/* Make the navbar toggler button and icon always visible and contrasting */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.8); /* light border for visibility */
+  color: white !important;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999; /* Ensure it's on top */
+}
+
+/* If your icon is a <span> inside the toggler */
+.navbar-toggler span,
+.navbar-toggler i,
+.navbar-toggler svg,
+.navbar-toggler .oi,
+.navbar-toggler .icon-menu {
+  color: white !important;
+  fill: white !important;
+}
+
+/* Optional: In case you're using custom icons or SVG */
+.navbar-toggler svg path {
+  fill: white !important;
+}
+
+/* For darker navbar on scroll (if applied dynamically via JS) */
+.navbar.scrolled .navbar-toggler,
+.navbar.awake .navbar-toggler {
+  color: white !important;
+  border-color: white !important;
+}
+
+
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
@@ -8630,12 +8662,17 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap {
   width: 100%;
-  height: 100%;
-  position: inherit;
+  min-height: 100vh;
+  height: auto;
+  position: relative; /* change from inherit */
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: visible; /* allows scrolling */
+  -webkit-overflow-scrolling: touch; /* smoother scroll on iOS */
+}
+
   .hero-wrap .overlay {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
