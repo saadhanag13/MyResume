@@ -79,7 +79,7 @@ export default function AboutSection() {
                   .holo-glitch {
                     position: absolute;
                     inset: 0;
-                    background: url('/img/photo.png') center/cover;
+                    background: url('./img/photo.png') center/cover;
                     mix-blend-mode: screen;
                     opacity: 0;
                     transition: opacity 0.3s;
@@ -106,7 +106,7 @@ export default function AboutSection() {
                 
                 <div className="card-container" style={{ position: "absolute", inset: 0, padding: "2rem" }}>
                   <img
-                    src="/img/photo.png"
+                    src="./img/photo.png"
                     alt="Saadhana"
                     style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", zIndex: 1, filter: "brightness(1) contrast(1)", opacity: 0.9 }}
                     onError={(e) => {
