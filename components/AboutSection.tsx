@@ -79,7 +79,7 @@ export default function AboutSection() {
                   .holo-glitch {
                     position: absolute;
                     inset: 0;
-                    background: url('./img/photo.png') center/cover;
+                    background: url('./img/bg1_remove.png') center/cover;
                     mix-blend-mode: screen;
                     opacity: 0;
                     transition: opacity 0.3s;
