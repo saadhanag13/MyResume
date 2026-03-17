@@ -108,7 +108,7 @@ export default function ProjectsSection() {
         const nextIndex = (currentIndex + 1) % projects.length;
         return projects[nextIndex];
       });
-    }, 2500);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [isHovered]);
