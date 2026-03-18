@@ -4,3 +4,7 @@ out
 .env
 .DS_Store
 *.pem
+
+
+/public/img/Professional*
+/public/img/photo.png
