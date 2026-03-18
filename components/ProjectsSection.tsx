@@ -28,7 +28,7 @@ const projects: Project[] = [
     linkLabel: "View Live App",
     gradient: "linear-gradient(135deg,#241804,#120902)",
     accent: "var(--gold)",
-    image: "/img/project-1.jpg",
+    image: "./img/project-1.jpg",
   },
   {
     id: "weather",
@@ -41,7 +41,7 @@ const projects: Project[] = [
     linkLabel: "View Live App",
     gradient: "linear-gradient(135deg,#0a2540,#1a0a3a)",
     accent: "var(--cyan)",
-    image: "/img/project-2.jpg",
+    image: "./img/project-2.jpg",
   },
   {
     id: "music",
@@ -54,7 +54,7 @@ const projects: Project[] = [
     linkLabel: "View on GitHub",
     gradient: "linear-gradient(135deg,#0d2137,#1a0030)",
     accent: "var(--violet)",
-    image: "/img/project-3.jpg",
+    image: "./img/project-3.jpg",
   },
   {
     id: "sentiment",
@@ -67,7 +67,7 @@ const projects: Project[] = [
     linkLabel: "View on GitHub",
     gradient: "linear-gradient(135deg,#1a0d2e,#0a2030)",
     accent: "var(--coral)",
-    image: "/img/project-4.jpg",
+    image: "./img/project-4.jpg",
   },
   {
     id: "classifier",
@@ -80,7 +80,7 @@ const projects: Project[] = [
     linkLabel: "View on GitHub",
     gradient: "linear-gradient(135deg,#001a1a,#1a0020)",
     accent: "var(--mint)",
-    image: "/img/project-5.jpg",
+    image: "./img/project-5.jpg",
   },
   // {
   //   id: "rehab",
@@ -106,7 +106,7 @@ const projects: Project[] = [
     linkLabel: "View on GitHub",
     gradient: "linear-gradient(135deg,#1a1a0a,#0a1a2a)",
     accent: "var(--violet)",
-    image: "/img/project-6.jpg",
+    image: "./img/project-6.jpg",
   },
 ];
 

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Saadhana GN · AI/ML Engineer & Data Scientist",
   description: "Freelance AI/ML Engineer, Data Scientist & Full-Stack Developer. MSc Data Science, University of Leeds.",
   icons: {
-    icon: "/img/Professional Initial Logo.png",
+    icon: "./img/Professional Initial Logo.png",
   },
 };
 
