@@ -204,7 +204,7 @@ export default function ResumeSection() {
             }
           `}</style>
           
-          <a href="https://drive.google.com/file/d/1iElOPYRIughA5o6b-mSSQUsexvHs-1lc/view" target="_blank" rel="noopener noreferrer" className="btn-terminal">
+          <a href="https://drive.google.com/file/d/1yHBzPns0yWwcu0hS95S3sLlMrOsTT1Pn/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-terminal">
             <span style={{ color: "var(--muted)", fontWeight: 400 }}>$</span> sudo get full_cv.pdf <span className="cursor" />
           </a>
         </div>

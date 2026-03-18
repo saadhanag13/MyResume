@@ -216,7 +216,7 @@ export default function SkillsSection() {
               Zero broken builds in prod. Well... <em style={{ color: "var(--gold)" }}>mostly</em>. The CV has the receipts.
             </p>
           </div>
-          <a href="https://drive.google.com/file/d/1iElOPYRIughA5o6b-mSSQUsexvHs-1lc/view" target="_blank" rel="noopener noreferrer"
+          <a href="https://drive.google.com/file/d/1yHBzPns0yWwcu0hS95S3sLlMrOsTT1Pn/view?usp=sharing" target="_blank" rel="noopener noreferrer"
             style={{
               padding: "0.85rem 2rem", background: "linear-gradient(135deg,var(--cyan),var(--violet))",
               borderRadius: 100, color: "var(--navy)", fontWeight: 700, fontSize: "0.9rem",
