@@ -1,19 +1,34 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const projects = [
+type Project = {
+  id: string;
+  num: string;
+  name: string;
+  kicker: string;
+  tags: string[];
+  desc: string;
+  link: string;
+  linkLabel: string;
+  gradient: string;
+  accent: string;
+  emoji?: string;
+  image?: string;
+};
+
+const projects: Project[] = [
   {
     id: "RAG",
     num: "01",
     name: "AutoIntel- AI Analytics Platform",
     kicker: "AI/ML · Live Deploy",
     tags: ["TypeScript", "FastAPI", "Next.js", "scikit-learn", "FAISS", "sentence-transformers", "LLaMA 3.1", "HuggingFace Inference API", "Docker", "Nginx", "Vercel"],
-    desc: "End-to-end forecasting pipeline — LSTM model trained on Open-Meteo data, served via a FastAPI backend, visualised in a Streamlit frontend, and fully deployed on Render. From raw atmospheric data to interactive chart in one shot.",
-    link: "https://weather-frontend-4pj4.onrender.com/",
+    desc: "An end-to-end AutoML and RAG analytics platform powered by LLaMA 3.1. Features drag-and-drop CSV data ingestion, automated machine learning pipelines, and vector-search-driven intelligent insights. Built natively on a Next.js front-end with a containerised FastAPI backend.",
+    link: "https://auto-intel-iota.vercel.app/dashboard",
     linkLabel: "View Live App",
     gradient: "linear-gradient(135deg,#241804,#120902)",
     accent: "var(--gold)",
-    emoji: "🧠",
+    image: "/img/project-1.jpg",
   },
   {
     id: "weather",
@@ -26,7 +41,7 @@ const projects = [
     linkLabel: "View Live App",
     gradient: "linear-gradient(135deg,#0a2540,#1a0a3a)",
     accent: "var(--cyan)",
-    emoji: "🌦️",
+    image: "/img/project-2.jpg",
   },
   {
     id: "music",
@@ -39,7 +54,7 @@ const projects = [
     linkLabel: "View on GitHub",
     gradient: "linear-gradient(135deg,#0d2137,#1a0030)",
     accent: "var(--violet)",
-    emoji: "🎵",
+    image: "/img/project-3.jpg",
   },
   {
     id: "sentiment",
@@ -52,7 +67,7 @@ const projects = [
     linkLabel: "View on GitHub",
     gradient: "linear-gradient(135deg,#1a0d2e,#0a2030)",
     accent: "var(--coral)",
-    emoji: "💬",
+    image: "/img/project-4.jpg",
   },
   {
     id: "classifier",
@@ -65,7 +80,7 @@ const projects = [
     linkLabel: "View on GitHub",
     gradient: "linear-gradient(135deg,#001a1a,#1a0020)",
     accent: "var(--mint)",
-    emoji: "🖼️",
+    image: "/img/project-5.jpg",
   },
   // {
   //   id: "rehab",
@@ -91,7 +106,7 @@ const projects = [
     linkLabel: "View on GitHub",
     gradient: "linear-gradient(135deg,#1a1a0a,#0a1a2a)",
     accent: "var(--violet)",
-    emoji: "📐",
+    image: "/img/project-6.jpg",
   },
 ];
 
@@ -175,7 +190,11 @@ export default function ProjectsSection() {
                         animation: "fadeUp 0.3s ease both",
                       }}>
                         <div style={{ height: 160, background: p.gradient, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-                          <span style={{ fontSize: "3.5rem" }}>{p.emoji}</span>
+                          {p.image ? (
+                            <img src={p.image} alt={p.name} style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.8 }} />
+                          ) : (
+                            <span style={{ fontSize: "3.5rem" }}>{p.emoji}</span>
+                          )}
                           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "60%", background: "linear-gradient(to top,rgba(8,12,26,0.9),transparent)" }} />
                         </div>
                         <div style={{ padding: "1.5rem" }}>
@@ -212,7 +231,11 @@ export default function ProjectsSection() {
             }}>
               {/* Thumb */}
               <div style={{ height: 220, background: selected.gradient, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-                <span style={{ fontSize: "5rem" }}>{selected.emoji}</span>
+                {selected.image ? (
+                  <img src={selected.image} alt={selected.name} style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.8 }} />
+                ) : (
+                  <span style={{ fontSize: "5rem" }}>{selected.emoji}</span>
+                )}
                 <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "60%", background: "linear-gradient(to top,rgba(8,12,26,0.9),transparent)" }} />
                 <div style={{ position: "absolute", bottom: "1.2rem", left: "1.5rem", fontFamily: "'Space Mono',monospace", fontSize: "0.68rem", color: selected.accent }}>
                   {selected.kicker}
