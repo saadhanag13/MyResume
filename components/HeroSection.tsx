@@ -72,14 +72,31 @@ export default function HeroSection() {
 
       {/* Right — cards */}
       <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", gap: "1rem" }}>
-        <div style={{ background: "linear-gradient(135deg,rgba(0,229,255,0.05),rgba(168,85,247,0.05))", border: "1px solid rgba(0,229,255,0.2)", borderRadius: 20, padding: "1.5rem", backdropFilter: "blur(10px)" }}>
-          <div style={{ fontFamily: "'Space Mono',monospace", fontSize: "0.7rem", color: "var(--cyan)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "1rem" }}>// current role</div>
-          <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "1.1rem", fontWeight: 700, marginBottom: "0.4rem" }}>AI Software Engineer</div>
-          <div style={{ fontSize: "0.85rem", color: "var(--muted)" }}>MLAI Digital Pvt Ltd · Oct 2025 – Present</div>
-          <div style={{ marginTop: "0.8rem", display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-            {["Azure", "Databricks", "Microsoft Fabric","YOLO","React","Document AI"].map(t => <span key={t} style={{ fontSize: "0.72rem", padding: "0.2rem 0.6rem", borderRadius: 100, border: "1px solid rgba(0,229,255,0.2)", color: "var(--cyan)" }}>{t}</span>)}
+        {/* Current role — Macersoft */}
+        <div style={{ background: "linear-gradient(135deg,rgba(0,229,255,0.07),rgba(168,85,247,0.07))", border: "1px solid rgba(0,229,255,0.25)", borderRadius: 20, padding: "1.5rem", backdropFilter: "blur(10px)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
+            <div style={{ fontFamily: "'Space Mono',monospace", fontSize: "0.7rem", color: "var(--cyan)", textTransform: "uppercase", letterSpacing: "0.1em" }}>// current role</div>
+            <span style={{ fontFamily: "'Space Mono',monospace", fontSize: "0.65rem", padding: "0.15rem 0.5rem", borderRadius: 6, background: "rgba(0,229,255,0.12)", color: "var(--cyan)", border: "1px solid rgba(0,229,255,0.25)" }}>May 2026 – Present</span>
+          </div>
+          <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "1.1rem", fontWeight: 700, marginBottom: "0.25rem" }}>AI Engineer</div>
+          <div style={{ fontSize: "0.85rem", color: "var(--muted)", marginBottom: "0.8rem" }}>Macersoft Technologies · DataPlatformExperts</div>
+          <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+            {["Data Platforms", "AI/ML", "LLMs", "Cloud-Native", "GenAI"].map(t => <span key={t} style={{ fontSize: "0.72rem", padding: "0.2rem 0.6rem", borderRadius: 100, border: "1px solid rgba(0,229,255,0.2)", color: "var(--cyan)" }}>{t}</span>)}
           </div>
         </div>
+
+        {/* Previous role — MLAI Digital
+        <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(0,255,195,0.12)", borderRadius: 16, padding: "1.2rem", backdropFilter: "blur(8px)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.6rem" }}>
+            <div style={{ fontFamily: "'Space Mono',monospace", fontSize: "0.65rem", color: "var(--mint)", textTransform: "uppercase", letterSpacing: "0.1em" }}>// previous role</div>
+            <span style={{ fontFamily: "'Space Mono',monospace", fontSize: "0.62rem", color: "var(--muted)" }}>Oct 2025 – May 2026</span>
+          </div>
+          <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "0.95rem", fontWeight: 700, marginBottom: "0.2rem", color: "var(--white)" }}>AI Software Engineer</div>
+          <div style={{ fontSize: "0.8rem", color: "var(--muted)", marginBottom: "0.7rem" }}>MLAI Digital Pvt Ltd</div>
+          <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
+            {["Azure", "Databricks", "Microsoft Fabric", "YOLO", "RAG", "Snowflake"].map(t => <span key={t} style={{ fontSize: "0.68rem", padding: "0.15rem 0.5rem", borderRadius: 100, border: "1px solid rgba(0,255,195,0.15)", color: "var(--mint)" }}>{t}</span>)}
+          </div>
+        </div> */}
 
         <div className="responsive-grid-2" style={{ gap: "1rem" }}>
           {[

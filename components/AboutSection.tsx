@@ -214,11 +214,15 @@ export default function AboutSection() {
                   </div>
                   
                   <p ref={bioRef} style={{ fontSize: "1.05rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: "1.5rem", fontFamily: "'DM Sans', sans-serif" }}>
-                    I am an <strong style={{ color: "var(--white)", borderBottom: "1px solid var(--mint)" }}>AI Software Engineer</strong> operating at the nexus of predictive modelling and full-stack systems architecture. Armed with an MSc in Data Science from the University of Leeds, I specialise in translating theoretical mathematics into production-grade infrastructure.
+                    I am an <strong style={{ color: "var(--white)", borderBottom: "1px solid var(--mint)" }}>AI/ML Software Engineer</strong> with <strong style={{ color: "var(--white)" }}>5+ years in technology</strong> and <strong style={{ color: "var(--white)" }}>2+ years specialising in AI/ML engineering</strong> — spanning Generative AI, LLMs, computer vision, cloud-native systems, and large-scale data engineering. Armed with an MSc in Data Science from the University of Leeds, I bridge the gap between research-grade models and production-ready systems.
                   </p>
                   
                   <p style={{ fontSize: "1.05rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: "1.5rem", fontFamily: "'DM Sans', sans-serif", borderLeft: "2px solid var(--violet)", paddingLeft: "1.5rem", background: "linear-gradient(90deg, rgba(168,85,247,0.05), transparent)" }}>
-                    Currently architecting multi-modal AI pipelines and cognitive services at MLAI Digital. I build systems that are not just highly-available and secure, but intuitively designed to solve complex enterprise bottlenecks. From developing computer vision models to orchestrating cloud-native backends, I thrive on the friction between raw data and actionable intelligence.
+                    Currently an AI Engineer at Macersoft Technologies, architecting intelligent data platforms and LLM-driven enterprise solutions. I build systems that combine real-time analytics, cloud-native infrastructure, and generative AI to solve complex business challenges at scale.
+                  </p>
+
+                  <p style={{ fontSize: "1.05rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: "1.5rem", fontFamily: "'DM Sans', sans-serif", borderLeft: "2px solid var(--violet)", paddingLeft: "1.5rem", background: "linear-gradient(90deg, rgba(168,85,247,0.05), transparent)" }}>
+                    My technical focus includes building end-to-end AI applications, implementing MLOps pipelines, engineering large-scale data systems, and extracting actionable insights from complex datasets.
                   </p>
                   
                   <p style={{ fontSize: "1.05rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: "2.5rem", fontFamily: "'DM Sans', sans-serif" }}>

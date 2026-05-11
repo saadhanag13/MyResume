@@ -3,19 +3,33 @@ import { useState } from "react";
 
 const commits = [
   {
-    hash: "a4f1e29",
-    type: "feat",
+    hash: "f9d2c87",
+    type: "fix",
     branch: "experience",
-    date: "Oct 2025 – Present",
-    title: "AI Software Engineer @ MLAI Digital Pvt Ltd",
+    date: "May 2026 – Present",
+    title: "AI Engineer @ Macersoft Technologies · DataPlatformExperts",
     body: [
-      "KYC automation with Azure Document Intelligence & Cognitive Services",
-      "YOLO-based object detection via serverless Azure Functions",
-      "Chatbot for mutual fund advisory with Azure Speech + React",
-      "ARM template IaC + cloud migration for scalable inference pipelines",
+      "Joining as AI Engineer at a DataPlatformExperts company",
+      "Building intelligent data platform solutions powered by AI/ML",
+      "Leveraging cloud-native and LLM-driven architectures at scale",
     ],
     color: "var(--cyan)",
     tag: "current",
+  },
+  {
+    hash: "a4f1e29",
+    type: "feat",
+    branch: "experience",
+    date: "Oct 2025 – May 2026",
+    title: "AI Software Engineer @ MLAI Digital Pvt Ltd",
+    body: [
+      "Real-time fraud detection pipeline — MySQL, MongoDB, Databricks, Snowflake & Microsoft Fabric",
+      "Azure Document Co-Pilot — GenAI, OCR, YOLO & RAG for classification, search & insurance compliance",
+      "Serverless Azure migration via ARM template IaC — Functions, Blob Storage & Azure Foundry",
+      "Mutual fund advisory chatbot using Azure Speech, React & conversational AI",
+    ],
+    color: "var(--mint)",
+    tag: "full-time",
   },
   {
     hash: "c2b903d",
@@ -29,7 +43,7 @@ const commits = [
       "Cloud VM deployment for real-time streaming & scalable inference",
     ],
     color: "var(--mint)",
-    tag: "contract",
+    tag: "intern",
   },
   {
     hash: "9d7a44c",
@@ -62,7 +76,7 @@ const commits = [
 ];
 
 export default function ResumeSection() {
-  const [expanded, setExpanded] = useState<string | null>("a4f1e29");
+  const [expanded, setExpanded] = useState<string | null>("f9d2c87");
 
   return (
     <section id="resume" className="section-wrapper">
@@ -139,7 +153,7 @@ export default function ResumeSection() {
             {/* Prompt */}
             <div style={{ marginTop: "1.5rem", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "1rem", fontFamily: "'Space Mono',monospace", fontSize: "0.9rem", color: "var(--muted)", display: "flex", alignItems: "center", gap: "0.6rem" }}>
               <span style={{ color: "var(--mint)" }}>$</span>
-              <span>4 commits, 0 regrets</span>
+              <span>5 commits, 0 regrets</span>
               <span style={{ display: "inline-block", width: 8, height: 14, background: "var(--cyan)", marginLeft: 4, animation: "pulse 1s infinite" }} />
             </div>
           </div>
